@@ -1,23 +1,24 @@
-
 chat-scape
+  create.table
+    add_column
 
-create.table
-add_column
 
-users
-  :name
-  :address
-  :password
-  :password_confirmation
-  :group_id     :integer
-
+users(devise)
+  +add
+  :name       t.string
+_________________________
 group
-  :name         :string
-
-tweet
-  :text        :text
-  :user_id     :integer
-  :group_id    :integer
-
-
-
+  +add
+   name       t.string
+_________________________
+messages
+  +add
+  :text        t.text
+  :user_id     t.references
+  :group_id    t.references
+_________________________
+member
+  +add
+  :user_id     t.references
+  :user_id     t.references
+_________________________
