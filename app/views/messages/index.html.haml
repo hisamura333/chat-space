@@ -1,0 +1,52 @@
+%header
+  %p.alert
+    チャットグループが更新されました
+
+.chat
+  .chat--side
+    .chat--user
+      %p たなか たいち
+      .chat--side--edits
+        %a{href: ""}
+          =fa_icon "edit"
+        %a{href: ""}
+          =fa_icon "cog"
+
+
+    %ul.chat--groups
+      %li.chat--group
+        %p.chat--group__name sample
+        %p.chat--group__message good
+
+
+  .main
+    .main--header
+      .main--header--group
+        sample
+
+      .main--header--member
+        Members: たなかたいち
+      %a.main--header--edit
+        edit
+
+    .main--body
+      .main--body.clearfix
+        .main--body--name
+          たなかたいち
+        .main--body--time
+          2016/10/11 12:23:34
+      .main--body--group
+        sample
+
+    .main--footer
+      %form.main--footer__message
+      .main--footer--message
+        %textarea
+        %label.main--footer--file
+          %i.fa.fa-image
+      %input{:type =>"submit",:name =>"commit",:value =>"Send",:data_disable_with =>"Send"}
+
+
+
+
+
