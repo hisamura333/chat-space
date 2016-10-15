@@ -37,12 +37,19 @@
         sample
 
     .main__footer
-      %form.main__footer--message
-      .main__footer--text
-        %textarea
-        %label.main__footer--file
-          %i.fa.fa-image
-      %input{:type =>"submit",:name =>"commit",:value =>"Send",:data_disable_with =>"Send"}
+      -# %form.main__footer--message
+      -# .main__footer--text
+      -#   %textarea
+      -#   %label.main__footer--file
+      -#     %i.fa.fa-image
+      -# %input{:type =>"submit",:name =>"commit",:value =>"Send",:data_disable_with =>"Send"}
+
+      = form_for @message do |f|
+        .main__footer--text
+          = f.text_area :body
+          %label.main__footer--file
+            %i.fa.fa-image
+        = f.submit :input
 
 
 
