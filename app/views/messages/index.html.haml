@@ -3,44 +3,44 @@
     チャットグループが更新されました。
 
 .chat
-  .chat--side
-    .chat--user
+  .chat__side
+    .chat__user
       %p たなか たいち
-      .chat--side--edits
+      .chat__side--edits
         %a{href: ""}
           =fa_icon "edit"
         %a{href: ""}
           =fa_icon "cog"
-          
-    %ul.chat--groups
-      %li.chat--group
-        %p.chat--group__name sample
-        %p.chat--group__message good
+
+    %ul.chat__groups
+      %li.chat__group
+        %p.chat__group--name sample
+        %p.chat__group--message good
 
   .main
-    .main--header
-      .main--header--group
+    .main__header
+      .main__header--group
         sample
 
-      .main--header--member
+      .main__header--member
         Members: たなかたいち
-      %a.main--header--edit
+      %a.main__header--edit
         edit
 
-    .main--body
-      .main--body.clearfix
-        .main--body--name
+    .main__body
+      .main__body.clearfix
+        .main__body--name
           たなかたいち
-        .main--body--time
+        .main__body--time
           2016/10/11 12:23:34
-      .main--body--group
+      .main__body--group
         sample
 
-    .main--footer
-      %form.main--footer__message
-      .main--footer--message
+    .main__footer
+      %form.main__footer--message
+      .main__footer--text
         %textarea
-        %label.main--footer--file
+        %label.main__footer--file
           %i.fa.fa-image
       %input{:type =>"submit",:name =>"commit",:value =>"Send",:data_disable_with =>"Send"}
 

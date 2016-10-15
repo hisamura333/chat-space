@@ -30,12 +30,12 @@ header {
 .chat {
   min-width: 980px;
   height: 100%;
-  &--side {
+  &__side {
     float: left;
     height: 100%;
     width: 20%;
     background-color: #2f3e5a;
-    .chat--user {
+    .chat__user {
       height: 60px;
       padding: 20px;
       color: #fff;
@@ -64,22 +64,22 @@ header {
     }
   }
 
-    .chat--groups {
+    .chat__groups {
       margin: 0;
       padding: 0;
       padding-left: 10px;
       color: #fff;
       list-style: none;
-      .chat--group{
+      .chat__group{
         display: list-item;
         text-align: -webkit-match-parent;
-        &__name {
+        &--name {
           display: inline-block;
           font-size: 15px;
           margin-bottom: 5px;
           margin-left: 20px;
         }
-        &__message {
+        &--message {
           font-size: 11px;
           margin-left: 20px;
         }
@@ -93,7 +93,7 @@ header {
   position: relative;
   width: 80%;
   height: 100%;
-  &--header {
+  &__header {
     height: 60px;
     padding: 20px;
     position: relative;
@@ -120,7 +120,7 @@ header {
       left:70VW;
     }
   }
-  &--body {
+  &__body {
     position: relative;
     padding: 20px 0;
     height: calc(100% - 270px);
@@ -144,7 +144,7 @@ header {
       }
   }
 
-  &--footer {
+  &__footer {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -152,7 +152,7 @@ header {
     padding: 40px 40px;
     background-color: #ddd;
   }
-    .main--footer--message{
+    .main__footer--text{
       float: left;
       width: calc(100% - 115px);
       height: 50px;
