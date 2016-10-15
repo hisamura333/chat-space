@@ -2,8 +2,10 @@ class MessagesController < ApplicationController
 
   def index
     @message = Message.new
+    # redirect_to :action => "index"
   end
-  def new
-    @message = Message.new
+  def create
+    redirect_to :action => "index"
   end
+
 end
