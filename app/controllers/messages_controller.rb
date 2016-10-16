@@ -9,10 +9,13 @@ class MessagesController < ApplicationController
   end
   def create
     @message = Message.create(create_params)
-      unless @message.save
-        flash[:error] = "空欄のため保存できません"
+      if @message.save
+        flash[:success] = "OK!"
+        redirect_to acction: 'index'
+      else
+        flash[:error] = "空欄のため"
+        render:index
       end
-    redirect_to :action => "index"
 
   end
 
