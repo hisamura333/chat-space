@@ -37,6 +37,11 @@
         sample
 
     .main__footer
+      - if flash[:error].present?
+        = flash[:error]
+        
+      - if flash[:success].present?
+        = flash[:success]
       -# %form.main__footer--message
       -# .main__footer--text
       -#   %textarea
