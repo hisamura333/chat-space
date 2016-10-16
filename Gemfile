@@ -49,5 +49,6 @@ end
   gem 'haml-rails'
   gem 'devise'
   gem 'font-awesome-rails'
+  gem 'rails-i18n'
 
 
