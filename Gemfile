@@ -35,6 +35,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+
 end
 
 group :development do
@@ -50,5 +51,10 @@ end
   gem 'devise'
   gem 'font-awesome-rails'
   gem 'rails-i18n'
+  gem 'rspec-rails','~>3.1.0'
+  gem 'factory_girl_rails','~> 3.0'
 
+group :development do
+  gem 'web-console','~> 2.0'
+end
 
