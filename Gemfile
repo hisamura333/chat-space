@@ -52,7 +52,7 @@ end
   gem 'font-awesome-rails'
   gem 'rails-i18n'
   gem 'rspec-rails','~>3.1.0'
-  gem 'factory_girl_rails','~> 3.0'
+  gem 'factory_girl_rails','~> 4.4.1'
 
 group :development do
   gem 'web-console','~> 2.0'
