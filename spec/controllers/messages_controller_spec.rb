@@ -31,9 +31,6 @@ describe MessagesController, type: :controller do
   end
 end
 
-  #     # message = create(:message)
-  #     # post :create, body: message.body
-  #     # expect(assigns(:message)).to eq message
 
 
 
