@@ -43,6 +43,7 @@ group :development, :test do
   gem 'font-awesome-rails'
   gem 'rails-i18n'
   gem 'rails-controller-testing'
+  gem 'pry-rails'
 end
 
 group :development do
