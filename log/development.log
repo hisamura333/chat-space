@@ -2932,3 +2932,55 @@ Processing by MessagesController#index as HTML
 Completed 200 OK in 384ms (Views: 382.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/messages" for ::1 at 2016-10-17 16:24:01 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (3.7ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (19.1ms)
+Completed 200 OK in 360ms (Views: 319.6ms | ActiveRecord: 6.7ms)
+
+
+Started POST "/messages" for ::1 at 2016-10-17 16:24:04 +0900
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xMFaNjDcsydfMBPWumeMBUE73Qroz6hhQbLp5z19h5HD7Ms/vRhhwIYWVaWZ7E4W1CgEM0aWMHU+OvvoEYAZzA==", "message"=>{"body"=>""}, "commit"=>"input"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 583ms (Views: 25.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/messages" for ::1 at 2016-10-17 16:24:09 +0900
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dNC5hVcKPtfQPKBCWF8nPjZzv6CEBZESnLoPe4E9Eupz/SiM2s7sMAka5jF71OUto2BmmSpcCQbjMh10rcCMtw==", "message"=>{"body"=>"aaa"}, "commit"=>"input"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.6ms)[0m  [1m[32mINSERT INTO `messages` (`created_at`, `updated_at`, `body`) VALUES ('2016-10-17 07:24:09', '2016-10-17 07:24:09', 'aaa')[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/messages?acction=index
+Completed 302 Found in 10ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/messages?acction=index" for ::1 at 2016-10-17 16:24:09 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"acction"=>"index"}
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (6.2ms)
+Completed 200 OK in 30ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for ::1 at 2016-10-17 16:24:12 +0900
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fGfwG4jgTlDjqCUxDwYMqKiLNplSctaXXVdKUvjY0lp7SmESBSSctzqOY0Isjc67PZjvoPwrToMi31hd1CVMBw==", "message"=>{"body"=>""}, "commit"=>"input"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (6.2ms)
+Completed 200 OK in 37ms (Views: 32.3ms | ActiveRecord: 0.6ms)
+
+
