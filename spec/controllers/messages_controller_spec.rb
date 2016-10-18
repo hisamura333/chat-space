@@ -15,11 +15,18 @@ describe MessagesController, type: :controller do
   describe 'POST #create'do
     let!(:message){build(:message)}
     let!(:message_params){{body:message.body}}
+    let!(:message_params_brank){{body:""}}
 
     it "assigns a create message to @message"do
       expect do
         post :create, message: message_params
       end.to change(Message, :count).by(1)
+    end
+
+    it "dosen't create a new message with blank body"do
+      expect do
+        post :create, message: message_params_brank
+      end.not_to change(Message, :count)
     end
   end
 end
