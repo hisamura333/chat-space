@@ -17,14 +17,17 @@ body {
   clear: both;
 }
 
-header {
+.notice {
+  color: white;
+  text-align: center;
   height: 28px;
   background-color: #38AEF0;
 }
-
 .alert {
   color: white;
   text-align: center;
+  height: 28px;
+  background-color: #d65f4c;
 }
 
 .chat {
