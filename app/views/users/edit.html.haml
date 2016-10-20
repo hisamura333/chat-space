@@ -9,6 +9,10 @@
           =link_to 'トップページに戻る',root_path,class:'btn'
         .account-page__inner--right.user-form
           .edit_user
+            - if flash[:error].present?
+              .error_explanation
+                #p エラーは発生したためユーザーは保存されませんでした
+                = flash[:error]
             = form_for@user do |f|
               .field
                 .field-label
@@ -28,7 +32,7 @@
                   = f.password_field :password
 
                 .field-label
-                  = f.label :password_confirmation,"確認用パスワード"
+                  = f.label :password_confirmation, "確認用パスワード"
                 .field-input
                   = f.password_field :password_confirmation
 
