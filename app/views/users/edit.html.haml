@@ -1,0 +1,43 @@
+%body
+  .layout-notification
+    .account-page
+      .account-page__inner.clearfix
+        .account-page__inner--left.account-page__header
+          %h2 Edit Account
+          %h5 アカウントの編集
+          =link_to 'ログアウト', destroy_user_session_path,:method => :delete,class:'btn'
+          =link_to 'トップページに戻る',root_path,class:'btn'
+        .account-page__inner--right.user-form
+          .edit_user
+            = form_for@user do |f|
+              .field
+                .field-label
+                  = f.label :name,"名前"
+                .field-input
+                  = f.text_field :name
+
+                .field-label
+                  = f.label :email,"メールアドレス"
+                .field-input
+                  = f.text_field :email
+
+                .field-label
+                  = f.label :password,"パスワード"
+                  (変更したくない場合は、空白のままにしておいてください)
+                .field-input
+                  = f.password_field :password
+
+                .field-label
+                  = f.label :password_confirmation,"確認用パスワード"
+                .field-input
+                  = f.password_field :password_confirmation
+
+                .field-label
+                  = f.label :current_password,"現在のパスワード"
+                  (変更には現在のパスワードの入力が必要です)
+                .field-input
+                  = f.password_field :current_password
+              .actions
+                = f.submit value: "Update",class: 'btn'
+
+

@@ -39,7 +39,6 @@ group :development, :test do
   gem 'factory_girl_rails','~> 4.4.1'
   gem 'spring'
   gem 'haml-rails'
-  gem 'devise'
   gem 'font-awesome-rails'
   gem 'rails-i18n'
   gem 'rails-controller-testing'
@@ -60,7 +59,7 @@ group :test do
   gem 'faker'
 end
 
-
+gem 'devise'
 
 
 
