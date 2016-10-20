@@ -11,7 +11,7 @@
           .edit_user
             - if flash[:error].present?
               .error_explanation
-                #p エラーは発生したためユーザーは保存されませんでした
+                #p エラーが発生したためユーザーを保存できませんでした
                 = flash[:error]
             = form_for@user do |f|
               .field

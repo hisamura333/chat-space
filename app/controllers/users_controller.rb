@@ -10,7 +10,7 @@ class UsersController < ApplicationController
     else
       redirect_to action: 'edit'
       user.errors.full_messages.each do |message|
-      flash[:error] = message
+        flash[:error] = message
       end
     end
   end

@@ -4001,3 +4001,2088 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 200 OK in 139ms (Views: 111.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/users/3/edit" for ::1 at 2016-10-20 14:11:41 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (550.9ms)
+Completed 500 Internal Server Error in 612ms (ActiveRecord: 7.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `deep_symbolize_keys' for "サイトのタイトル":String):
+    42:                 .field-input
+    43:                   = f.password_field :current_password
+    44:               .actions
+    45:                 = f.submit value: "Update",class: 'btn'
+  
+app/views/users/edit.html.haml:45:in `block in _app_views_users_edit_html_haml___2253712648897630997_70261670008100'
+app/views/users/edit.html.haml:16:in `_app_views_users_edit_html_haml___2253712648897630997_70261670008100'
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.9ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (103.6ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from const_missing at /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/http/mime_type.rb:52)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (475.2ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (533.5ms)
+Started GET "/" for ::1 at 2016-10-20 14:11:51 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (11.9ms)
+Completed 200 OK in 406ms (Views: 383.9ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 14:11:54 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (405.5ms)
+Completed 500 Internal Server Error in 417ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `deep_symbolize_keys' for "サイトのタイトル":String):
+    42:                 .field-input
+    43:                   = f.password_field :current_password
+    44:               .actions
+    45:                 = f.submit value: "Update",class: 'btn'
+  
+app/views/users/edit.html.haml:45:in `block in _app_views_users_edit_html_haml___2253712648897630997_70261700668600'
+app/views/users/edit.html.haml:16:in `_app_views_users_edit_html_haml___2253712648897630997_70261700668600'
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.4ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (116.4ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from const_missing at /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/http/mime_type.rb:52)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (4.3ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (13.0ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (2.7ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (642.6ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (709.5ms)
+Started GET "/users/3/edit" for ::1 at 2016-10-20 14:12:05 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (394.4ms)
+Completed 500 Internal Server Error in 402ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `deep_symbolize_keys' for "サイトのタイトル":String):
+    42:                 .field-input
+    43:                   = f.password_field :current_password
+    44:               .actions
+    45:                 = f.submit value: "Update",class: 'btn'
+  
+app/views/users/edit.html.haml:45:in `block in _app_views_users_edit_html_haml___2253712648897630997_70261735503320'
+app/views/users/edit.html.haml:16:in `_app_views_users_edit_html_haml___2253712648897630997_70261735503320'
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.6ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (93.5ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from const_missing at /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/http/mime_type.rb:52)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (466.6ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (514.8ms)
+Started GET "/users/3/edit" for ::1 at 2016-10-20 14:12:34 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (444.6ms)
+Completed 500 Internal Server Error in 452ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `deep_symbolize_keys' for "サイトのタイトル":String):
+    42:                 .field-input
+    43:                   = f.password_field :current_password
+    44:               .actions
+    45:                 = f.submit value: "Update",class: 'btn'
+  
+app/views/users/edit.html.haml:45:in `block in _app_views_users_edit_html_haml___2253712648897630997_70261713503920'
+app/views/users/edit.html.haml:16:in `_app_views_users_edit_html_haml___2253712648897630997_70261713503920'
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (104.1ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from const_missing at /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/http/mime_type.rb:52)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (464.9ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (517.4ms)
+Started GET "/" for ::1 at 2016-10-20 14:12:46 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (8.5ms)
+Completed 200 OK in 42ms (Views: 39.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 14:12:49 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (415.9ms)
+Completed 500 Internal Server Error in 428ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `deep_symbolize_keys' for "サイトのタイトル":String):
+    42:                 .field-input
+    43:                   = f.password_field :current_password
+    44:               .actions
+    45:                 = f.submit value: "Update",class: 'btn'
+  
+app/views/users/edit.html.haml:45:in `block in _app_views_users_edit_html_haml___2253712648897630997_70261711037680'
+app/views/users/edit.html.haml:16:in `_app_views_users_edit_html_haml___2253712648897630997_70261711037680'
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.1ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (104.2ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from const_missing at /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/http/mime_type.rb:52)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (548.2ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (603.6ms)
+Started GET "/users/3/edit" for ::1 at 2016-10-20 14:13:21 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (373.7ms)
+Completed 500 Internal Server Error in 383ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `deep_symbolize_keys' for "サイトのタイトル":String):
+    42:                 .field-input
+    43:                   = f.password_field :current_password
+    44:               .actions
+    45:                 = f.submit value: "Update",class: 'btn'
+  
+app/views/users/edit.html.haml:45:in `block in _app_views_users_edit_html_haml___2253712648897630997_70261719585340'
+app/views/users/edit.html.haml:16:in `_app_views_users_edit_html_haml___2253712648897630997_70261719585340'
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (100.7ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from const_missing at /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/http/mime_type.rb:52)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (486.6ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (546.4ms)
+Started GET "/users/3" for ::1 at 2016-10-20 14:13:26 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/users/3"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered collection of /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [21 times] (16.0ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.8ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (136.0ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from const_missing at /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/http/mime_type.rb:52)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (455.4ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (517.8ms)
+Started GET "/" for ::1 at 2016-10-20 14:13:30 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (7.7ms)
+Completed 200 OK in 60ms (Views: 57.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 14:13:32 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (367.6ms)
+Completed 500 Internal Server Error in 380ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `deep_symbolize_keys' for "サイトのタイトル":String):
+    42:                 .field-input
+    43:                   = f.password_field :current_password
+    44:               .actions
+    45:                 = f.submit value: "Update",class: 'btn'
+  
+app/views/users/edit.html.haml:45:in `block in _app_views_users_edit_html_haml___2253712648897630997_70261712557680'
+app/views/users/edit.html.haml:16:in `_app_views_users_edit_html_haml___2253712648897630997_70261712557680'
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.5ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (98.6ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from const_missing at /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/http/mime_type.rb:52)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (559.2ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (613.4ms)
+Started GET "/" for ::1 at 2016-10-20 14:14:29 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (22.4ms)
+Completed 200 OK in 87ms (Views: 63.6ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 14:14:32 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+Started GET "/users/3/edit" for ::1 at 2016-10-20 14:15:32 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (604.6ms)
+Completed 500 Internal Server Error in 52427ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `deep_symbolize_keys' for "サイトのタイトル":String):
+    42:                 .field-input
+    43:                   = f.password_field :current_password
+    44:               .actions
+    45:                 = f.submit value: "Update",class: 'btn'
+  
+app/views/users/edit.html.haml:45:in `block in _app_views_users_edit_html_haml___2253712648897630997_70261705511440'
+app/views/users/edit.html.haml:16:in `_app_views_users_edit_html_haml___2253712648897630997_70261705511440'
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (105.5ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from const_missing at /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/http/mime_type.rb:52)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (507.5ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (563.8ms)
+Started GET "/users/3/edit" for ::1 at 2016-10-20 14:16:43 +0900
+Completed 401 Unauthorized in 295271ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 14:19:39 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Started GET "/" for ::1 at 2016-10-20 14:19:40 +0900
+Processing by MessagesController#index as HTML
+  Rendered messages/index.html.haml within layouts/application (83.8ms)
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 417ms (Views: 412.2ms | ActiveRecord: 0.4ms)
+
+
+Completed 200 OK in 549ms (Views: 502.4ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 14:19:42 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (470.7ms)
+Completed 500 Internal Server Error in 486ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `deep_symbolize_keys' for "サイトのタイトル":String):
+    42:                 .field-input
+    43:                   = f.password_field :current_password
+    44:               .actions
+    45:                 = f.submit value: "Update",class: 'btn'
+  
+app/views/users/edit.html.haml:45:in `block in _app_views_users_edit_html_haml___3564904696384655081_70127039164060'
+app/views/users/edit.html.haml:16:in `_app_views_users_edit_html_haml___3564904696384655081_70127039164060'
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.1ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (117.0ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from const_missing at /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/http/mime_type.rb:52)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (559.9ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (631.5ms)
+Started GET "/users/3/edit" for ::1 at 2016-10-20 14:21:35 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (469.2ms)
+Completed 500 Internal Server Error in 477ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `deep_symbolize_keys' for "サイトのタイトル":String):
+    37:                   = f.password_field :password_confirmation
+    38: 
+    39:               .actions
+    40:                 = f.submit value: "Update",class: 'btn'
+  
+app/views/users/edit.html.haml:40:in `block in _app_views_users_edit_html_haml___3564904696384655081_70127110970060'
+app/views/users/edit.html.haml:16:in `_app_views_users_edit_html_haml___3564904696384655081_70127110970060'
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.6ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (94.5ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from const_missing at /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/http/mime_type.rb:52)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (499.9ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (548.2ms)
+Started GET "/users/3/edit" for ::1 at 2016-10-20 14:22:11 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (444.8ms)
+Completed 200 OK in 522ms (Views: 484.0ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/users/3" for ::1 at 2016-10-20 14:23:32 +0900
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BPHE6vgD0G0wjFjJIq1EjG2sLsYZGiIr1T/Bmz+6505nb+A0LcabxNeJ81uCcfPh8UUZLGB4CH2X0nav0RlCNQ==", "user"=>{"name"=>"aaaccc", "email"=>"aaa@aaa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update", "id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+Redirected to http://localhost:3000/users/3/edit
+Completed 302 Found in 602ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 14:23:33 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (6.5ms)
+Completed 200 OK in 42ms (Views: 38.2ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/users/3" for ::1 at 2016-10-20 14:24:19 +0900
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gv9ZSwj0eeLis8XfM0pB/1KxF/2jzSHIWlSuOmBCEcPhYX2V3TEySwW2bk2TlvaSzlggF9qvC54YuRkOjuG0uA==", "user"=>{"name"=>"aaaccc", "email"=>"aaa@aaa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update", "id"=>"3"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+Redirected to http://localhost:3000/users/3/edit
+Completed 302 Found in 176ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 14:24:19 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 43ms (Views: 39.4ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/users/3" for ::1 at 2016-10-20 14:30:58 +0900
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vDsNirwgJvv4pvg4HjgdSuUt23186sx2ySPMO5KI6orfpSlUaeVtUh+jU6q+5KonecTslwWI5iCLznsPfCtP8Q==", "user"=>{"name"=>"aaaccc", "email"=>"aaa@aaa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update", "id"=>"3"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 164ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 14:30:58 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 59ms (Views: 49.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 14:33:34 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (8.8ms)
+Completed 200 OK in 58ms (Views: 52.7ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/users/3" for ::1 at 2016-10-20 14:33:36 +0900
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yYbjvgqQ64/4iSgKflf6k+H29sDc1JXvqrG3INPrKYGqGMdg31WgJh+Mg5jei03+fR/BKqW2v7noXAAUPUiM+g==", "user"=>{"name"=>"aaaccc", "email"=>"aaa@aaa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update", "id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+Redirected to http://localhost:3000/users/3/edit
+Completed 302 Found in 161ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 14:33:36 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 36ms (Views: 32.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 14:39:41 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (22.4ms)
+Completed 200 OK in 77ms (Views: 71.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 14:45:32 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (16.7ms)
+Completed 200 OK in 88ms (Views: 80.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 14:45:34 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 49ms (Views: 46.1ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/users/3" for ::1 at 2016-10-20 14:45:37 +0900
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tjOexeIgjyWIgRK+Ja3LG1K36ZeYkEWHMaTURFaz8o/VrbobN+XEjG+EuSyFcXx2zl7efeHyb9FzSWNwuBBX9A==", "user"=>{"name"=>"aaaccc", "email"=>"aaa@aaa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update", "id"=>"3"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+Redirected to http://localhost:3000/users/3/edit
+Completed 302 Found in 161ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 14:45:37 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (13.3ms)
+Completed 200 OK in 58ms (Views: 55.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 14:59:31 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (43.1ms)
+Completed 200 OK in 128ms (Views: 108.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 15:11:19 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (19.0ms)
+Completed 200 OK in 75ms (Views: 71.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 15:11:43 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (18.3ms)
+Completed 200 OK in 76ms (Views: 72.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 15:11:56 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (69.5ms)
+Completed 200 OK in 608ms (Views: 605.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 15:12:36 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (10.1ms)
+Completed 200 OK in 50ms (Views: 46.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 15:13:01 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (7.6ms)
+Completed 200 OK in 44ms (Views: 41.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 15:30:48 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (49.2ms)
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 1.5ms)
+
+
+  
+SyntaxError (/Users/HisamuraTaiki/chat-space/app/views/layouts/application.html.haml:15: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/HisamuraTaiki/chat-space/app/views/layouts/application.html.haml:18: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/layouts/application.html.haml:15: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/layouts/application.html.haml:18: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.4ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.7ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (111.9ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from const_missing at /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/http/mime_type.rb:52)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from const_missing at /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/http/mime_type.rb:52)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (83.7ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (194.5ms)
+Started GET "/" for ::1 at 2016-10-20 15:31:12 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (10.7ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.5ms)
+
+
+  
+SyntaxError (/Users/HisamuraTaiki/chat-space/app/views/layouts/application.html.haml:14: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/HisamuraTaiki/chat-space/app/views/layouts/application.html.haml:17: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/layouts/application.html.haml:14: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/layouts/application.html.haml:17: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.0ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (96.5ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from const_missing at /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/http/mime_type.rb:52)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from const_missing at /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/http/mime_type.rb:52)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (102.7ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (224.6ms)
+Started GET "/" for ::1 at 2016-10-20 15:32:05 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 54ms (Views: 51.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 15:32:26 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (8.9ms)
+Completed 200 OK in 48ms (Views: 45.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 15:39:09 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (8.0ms)
+Completed 200 OK in 72ms (Views: 50.1ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/users/3" for ::1 at 2016-10-20 15:39:19 +0900
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZgjhFr1U815IlOt/t70zv/B2Qeoduv/pUozDYTGyKlMFlsXIaJG496+RQO0XYYTSbJ92AGTY1b8QYXRV3xGPKA==", "user"=>{"name"=>"a", "email"=>"aaa@aaa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update", "id"=>"3"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.6ms)[0m  [1m[33mUPDATE `users` SET `name` = 'a', `updated_at` = '2016-10-20 06:39:19' WHERE `users`.`id` = 3[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 174ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 15:39:19 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 64ms (Views: 47.0ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 15:40:20 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (12.5ms)
+Completed 200 OK in 68ms (Views: 64.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 15:40:23 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (7.2ms)
+Completed 200 OK in 76ms (Views: 36.0ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/users/3" for ::1 at 2016-10-20 15:40:34 +0900
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GcHg4HWcsIf0OE2VeQXErSKYqnfItYMQjjba8rzN7v16X8Q+oFn7LhM95gfZ2XPAvnGdnbHXqUbM223GUm5Lhg==", "user"=>{"name"=>"ass", "email"=>"aaa@aaa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update", "id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[33mUPDATE `users` SET `name` = 'ass', `updated_at` = '2016-10-20 06:40:35' WHERE `users`.`id` = 3[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 170ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 15:40:35 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (8.8ms)
+Completed 200 OK in 37ms (Views: 34.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 15:41:04 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (8.8ms)
+Completed 200 OK in 69ms (Views: 46.3ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/users/3" for ::1 at 2016-10-20 15:41:11 +0900
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PVzFuqCS9t35BDr56MZLyWH8xilPOEYhKpyiBwRI3IFewuFkdVe9dB4BkWtIGvyk/RXxwzZabHdocRUz6ut5+g==", "user"=>{"name"=>"assaa", "email"=>"aaa@aaa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update", "id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE `users` SET `name` = 'assaa', `updated_at` = '2016-10-20 06:41:11' WHERE `users`.`id` = 3[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 167ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 15:41:11 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 50ms (Views: 39.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 15:41:16 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (8.2ms)
+Completed 200 OK in 41ms (Views: 38.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 15:43:46 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (8.9ms)
+Completed 200 OK in 60ms (Views: 56.1ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-10-20 15:43:50 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"00G4LAMJ0JShrSLTZMbayqgj8LSPOkqAhaVhy4GW6XCw35zy1sybPUaoiUHEGm2nNMrHXvZYYNbHSNb/bzVMCw=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 11ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-10-20 15:43:50 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.erb (5.0ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (18.6ms)
+Completed 200 OK in 67ms (Views: 59.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-20 15:44:15 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y7xowfhO51JB1/CDd7EPhIK9UjzSrKMcR7eSt3VUPJ/SfNp+a8KhXqgPEUUQog6vbawmizhv66Nng7mOq7Isrw==", "user"=>{"email"=>"aaa@aaa", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'aaa@aaa' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE `users` SET `current_sign_in_at` = '2016-10-20 06:44:15', `last_sign_in_at` = '2016-10-20 03:29:28', `sign_in_count` = 3, `updated_at` = '2016-10-20 06:44:15' WHERE `users`.`id` = 3[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 175ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 15:44:15 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (8.5ms)
+Completed 200 OK in 40ms (Views: 37.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 15:44:22 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 46ms (Views: 42.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 15:47:22 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 68ms (Views: 54.7ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/users/3" for ::1 at 2016-10-20 15:47:30 +0900
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PEGtaFd2oWGagzMFZ/OBRMoaIai4meduf8HGAo9PM5SJp0CFx0YtyqI/c4gFLcfsE5LfaUcRyzi3AONWO7WHZg==", "user"=>{"name"=>"as", "email"=>"aaa@aaa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update", "id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[33mUPDATE `users` SET `name` = 'as', `updated_at` = '2016-10-20 06:47:30' WHERE `users`.`id` = 3[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 171ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 15:47:30 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (9.8ms)
+Completed 200 OK in 53ms (Views: 50.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 15:47:41 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (9.7ms)
+Completed 200 OK in 48ms (Views: 44.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 15:48:29 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 50ms (Views: 46.2ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-10-20 15:48:31 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"kwNY+I06lRHdqeo/KB04hWj0Fg3ymTarzq6EWXcQAP8m5bUVHQoZuuUVqrJKw34tsXzozA0RGv0Gb6ENw+q0DQ=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 9ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-10-20 15:48:31 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (11.4ms)
+Completed 200 OK in 55ms (Views: 52.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-20 15:48:54 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fjbfKz8Y3PwQlQBSbWal7IC2CtoTSjo1q0MUR0NTjy5jkKtZfcU7Q4UdEgHsA6I3GqfvZadjZPT59SfCXsjviQ==", "user"=>{"email"=>"aaa@aaa", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'aaa@aaa' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE `users` SET `current_sign_in_at` = '2016-10-20 06:48:54', `last_sign_in_at` = '2016-10-20 06:44:15', `sign_in_count` = 4, `updated_at` = '2016-10-20 06:48:54' WHERE `users`.`id` = 3[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 185ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 15:48:54 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (7.9ms)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 15:49:16 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (7.4ms)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 15:57:59 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (46.0ms)
+Completed 200 OK in 166ms (Views: 124.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 15:58:07 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (41.5ms)
+Completed 200 OK in 108ms (Views: 101.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 15:58:09 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (29.0ms)
+Completed 200 OK in 95ms (Views: 86.2ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-10-20 15:59:30 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"YQos+EycfC2UYFgh6WStI4zU52o+uFcMzSbea9sAezildnMNtpPXrNZF9cQ7HbfHjK8LyGW/7NsLMNyBKIdBbg=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 15ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-10-20 15:59:30 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.erb (6.2ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (18.2ms)
+Completed 200 OK in 80ms (Views: 76.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-10-20 16:20:07 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.erb (3.6ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (14.6ms)
+Completed 200 OK in 70ms (Views: 63.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-10-20 16:20:09 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (9.7ms)
+Completed 200 OK in 53ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-20 16:20:17 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NAdKbBFs/IuJ+j/GmgtE6B6lYJXGBy3aksa1kIKxeiOR6DS4H28XzJPTkc1I9YfIHq+wwYvsvhPECARvrFpyBA==", "user"=>{"email"=>"aaa@aaa", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'aaa@aaa' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE `users` SET `current_sign_in_at` = '2016-10-20 07:20:17', `last_sign_in_at` = '2016-10-20 06:48:54', `sign_in_count` = 5, `updated_at` = '2016-10-20 07:20:17' WHERE `users`.`id` = 3[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 189ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 16:20:18 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (11.4ms)
+Completed 200 OK in 49ms (Views: 45.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 16:20:22 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (27.1ms)
+Completed 200 OK in 73ms (Views: 67.2ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/users/3" for ::1 at 2016-10-20 16:20:35 +0900
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+nbwfnECzEiaLZyqkMF3MqkiX6Lc5np9JB4rhh1iilhezkzAxOI1wgupZn3Z7+jfd5Tx/2dkTB/VVVTV2ef87A==", "user"=>{"name"=>"assssss", "email"=>"aaa@aaa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update", "id"=>"3"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE `users` SET `name` = 'assssss', `updated_at` = '2016-10-20 07:20:35' WHERE `users`.`id` = 3[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 167ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 16:20:35 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (11.6ms)
+Completed 200 OK in 58ms (Views: 55.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 16:28:35 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (The line was indented 2 levels deeper than the previous line.):
+     8:     = csrf_meta_tags
+     9:   %body
+    10:     - if alert.present?
+    11:         %p.alert =alert 
+    12:     - if flash[:success].present?
+    13:       .alert
+    14:         = flash[:success]
+  
+app/views/layouts/application.html.haml:11
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.3ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (87.8ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from const_missing at /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/http/mime_type.rb:52)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from const_missing at /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/http/mime_type.rb:52)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (102.4ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (233.5ms)
+Started GET "/users/3/edit" for ::1 at 2016-10-20 16:28:53 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 58ms (Views: 54.3ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-10-20 16:28:54 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"x2CsmDsC6kUhi9VoxIXPQtuzqWojfwtN7vhoHRIGXXpj2BAmjuITz7APL7+Nq1CvBQUHN5j9PS8fsxdO1oMrzg=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 8ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-10-20 16:28:54 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (14.7ms)
+Completed 200 OK in 57ms (Views: 55.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-20 16:30:08 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mx9c8tspZysDTxGJ0MLe7hsE/fDpEAp31wm86s4Qy6UPbrOPCFtH2J82v4zHh+zFddDlP06+wHHOB78ym5v6/w==", "user"=>{"email"=>"aaa@aaa", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'aaa@aaa' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE `users` SET `current_sign_in_at` = '2016-10-20 07:30:09', `last_sign_in_at` = '2016-10-20 07:20:17', `sign_in_count` = 6, `updated_at` = '2016-10-20 07:30:09' WHERE `users`.`id` = 3[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 186ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 16:30:09 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (9.7ms)
+Completed 200 OK in 52ms (Views: 48.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 16:31:09 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (10.8ms)
+Completed 200 OK in 53ms (Views: 51.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 16:31:12 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 47ms (Views: 45.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 16:31:22 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (13.3ms)
+Completed 200 OK in 56ms (Views: 53.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 16:31:49 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 40ms (Views: 37.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 16:31:51 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (11.1ms)
+Completed 200 OK in 59ms (Views: 52.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 16:31:53 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (16.6ms)
+Completed 200 OK in 69ms (Views: 63.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 16:31:55 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (18.8ms)
+Completed 200 OK in 80ms (Views: 74.5ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-10-20 16:31:56 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cgr/IAX8yM10Fbg9sIs4Yn+qxNGoV5e2/9rhK022aufHq/ljzGQYSA/pOZCkJi17fkNjl31jSw+bcdrKil0n/w=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 6ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-10-20 16:31:56 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (13.1ms)
+Completed 200 OK in 59ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-20 16:32:23 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5WqYpsF5ZPS+E1QIhzLja4DZ8aKh9pBtU1rZtY5qQdb8Bf9EMOLxsj+rxueysUlPPqlakPkwRXEeVI+isHOKmQ==", "user"=>{"email"=>"aaa@aaa", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'aaa@aaa' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE `users` SET `current_sign_in_at` = '2016-10-20 07:32:23', `last_sign_in_at` = '2016-10-20 07:30:09', `sign_in_count` = 7, `updated_at` = '2016-10-20 07:32:23' WHERE `users`.`id` = 3[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 190ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 16:32:23 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (8.1ms)
+Completed 200 OK in 35ms (Views: 32.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 16:41:09 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (8.4ms)
+Completed 200 OK in 57ms (Views: 52.0ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-10-20 16:41:11 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"54Owtz9DqviTEftJuHE1tfpNKyJFWXSuLSk49lZbCePWJRIWaIE7SIud9DzKibcEzl23fi9bGjmlOERMrlZd+g=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 6ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-10-20 16:41:11 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (14.5ms)
+Completed 200 OK in 59ms (Views: 57.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-10-20 16:41:24 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 41ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-20 16:41:34 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tN3zxMfopXQdzDSV5GBUalTIo4iklJ1PDwDATq3Ls0cS7RATYElAUlIGLexUkLsx/DGSyoWGlxH18vlQ4Zo7Kw==", "user"=>{"email"=>"aaa@aaa", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'aaa@aaa' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE `users` SET `current_sign_in_at` = '2016-10-20 07:41:34', `last_sign_in_at` = '2016-10-20 07:32:23', `sign_in_count` = 8, `updated_at` = '2016-10-20 07:41:34' WHERE `users`.`id` = 3[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 182ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 16:41:34 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (8.6ms)
+Completed 200 OK in 35ms (Views: 32.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 16:42:27 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 53ms (Views: 48.1ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/users/3" for ::1 at 2016-10-20 16:42:37 +0900
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iWPVy9GqiUMzUR8iJmbg6h2McqzaPkH8wdKKU6NgDGRwm37D6bvRYib6xUSi3j5/tPrOgmMF789LvpUvZmcjjw==", "user"=>{"name"=>"as", "email"=>"aaa@aaa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update", "id"=>"3"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE `users` SET `name` = 'as', `updated_at` = '2016-10-20 07:42:37' WHERE `users`.`id` = 3[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 176ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 16:42:37 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (7.8ms)
+Completed 200 OK in 34ms (Views: 31.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 16:44:50 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (8.0ms)
+Completed 200 OK in 55ms (Views: 50.6ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-10-20 16:45:59 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tI9Hx9fHmAGEBwRBOQ5KdKTKFX6JfembfayPUBOD53JNd+zP79bAIJGs3ie9tpThDbypUDBGR6j3wJAs1oTImQ=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-10-20 16:45:59 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (13.3ms)
+Completed 200 OK in 67ms (Views: 65.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-20 16:46:21 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0OcT7ZPWOiippDJYtj++1mS7NHtgRKdQzDkYcuG/XRIiUhSbor4a93jOLfxqLpvtMps8e4COXWI6TaGZiSYYWQ==", "user"=>{"email"=>"aaa@aaa", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'aaa@aaa' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 159ms (ActiveRecord: 0.4ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0OcT7ZPWOiippDJYtj++1mS7NHtgRKdQzDkYcuG/XRIiUhSbor4a93jOLfxqLpvtMps8e4COXWI6TaGZiSYYWQ==", "user"=>{"email"=>"aaa@aaa", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (10.4ms)
+Completed 200 OK in 203ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-20 16:46:28 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UTqg5DSPJL709RTgXkPi6IDbxhnIe+pw+PvfdAvXqV6jj6eSBecEYSWfC0SCUsfT1vvOGSixEEIOj2afY07sFQ==", "user"=>{"email"=>"aaa@aaa", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'aaa@aaa' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE `users` SET `current_sign_in_at` = '2016-10-20 07:46:28', `last_sign_in_at` = '2016-10-20 07:41:34', `sign_in_count` = 9, `updated_at` = '2016-10-20 07:46:28' WHERE `users`.`id` = 3[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 181ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 16:46:28 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (8.9ms)
+Completed 200 OK in 39ms (Views: 36.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 16:48:46 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (606.8ms)
+Completed 200 OK in 736ms (Views: 667.2ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-10-20 16:48:48 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"y31A5CxC5QgYUulX5maJ0zlt1dOivK2c3WeCCqHvcauzf/lRh3C7dfZA8FtmVAjA8H5ncAXklUzKk6xnTvRdGg=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 7ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-10-20 16:48:48 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (12.5ms)
+Completed 200 OK in 54ms (Views: 51.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-20 16:49:24 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J7Wqz01sMKGzdqQVO41xPdCFyzLW8kIHCpV1UY3Njeoi7jZUUu2SGhAeGJyjjM6eifbYqbrysvbFnnr4dv+Miw==", "user"=>{"email"=>"aaa@aaa", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'aaa@aaa' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE `users` SET `current_sign_in_at` = '2016-10-20 07:49:24', `last_sign_in_at` = '2016-10-20 07:46:28', `sign_in_count` = 10, `updated_at` = '2016-10-20 07:49:24' WHERE `users`.`id` = 3[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 597ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 16:49:25 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (8.4ms)
+Completed 200 OK in 53ms (Views: 35.4ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 16:49:34 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (8.8ms)
+Completed 200 OK in 44ms (Views: 37.8ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-10-20 16:49:35 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FkIh8JNvQ5of5qsKt15XGmir+VDhHiaV9snaPdrhJztDfC2kdAZriTbNPejmMAbvIq6KctV2gND63+eBmQewIQ=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 11ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-10-20 16:49:35 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (15.1ms)
+Completed 200 OK in 67ms (Views: 63.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-20 16:51:34 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/a6qL3G2j8d2KwrEqsR45JmqAZIsmSjKcS5/9whbt5lI+L+hO1E69m4w/n15YM/t2aD15HT0BxUmSU1msNjqmQ==", "user"=>{"email"=>"aaa@aaa", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'aaa@aaa' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE `users` SET `current_sign_in_at` = '2016-10-20 07:51:34', `last_sign_in_at` = '2016-10-20 07:49:24', `sign_in_count` = 11, `updated_at` = '2016-10-20 07:51:34' WHERE `users`.`id` = 3[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 757ms (ActiveRecord: 7.3ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 16:51:35 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (19.3ms)
+Completed 200 OK in 422ms (Views: 402.8ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 16:52:26 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (12.9ms)
+Completed 200 OK in 71ms (Views: 68.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 16:52:29 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (21.0ms)
+Completed 200 OK in 65ms (Views: 56.7ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-10-20 16:52:31 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Q4jrlEm+jfHAvcVRZCaHVvyHAzF/wQ5dp/+B8MBCUc18/xsFKqEY1hj93SFQIyeRirEyUl1aLHaHXcwiH2pzvA=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 12ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-10-20 16:52:31 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.erb (5.1ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (22.3ms)
+Completed 200 OK in 68ms (Views: 66.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-10-20 16:52:38 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (8.8ms)
+Completed 200 OK in 47ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-20 16:52:45 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+NR+CCT0fGRE1sER25SqZMfZyMWefhPPFiX+FQmH00ZvX+8ioxIUZ8XWKj1OXQ2BwroGrpVcmwSAIfPMs6YPyQ==", "user"=>{"email"=>"aaa@aaa", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'aaa@aaa' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE `users` SET `current_sign_in_at` = '2016-10-20 07:52:45', `last_sign_in_at` = '2016-10-20 07:51:34', `sign_in_count` = 12, `updated_at` = '2016-10-20 07:52:45' WHERE `users`.`id` = 3[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 181ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 16:52:45 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (11.6ms)
+Completed 200 OK in 52ms (Views: 48.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 16:53:00 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (14.6ms)
+Completed 200 OK in 76ms (Views: 69.1ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-10-20 16:53:51 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"168LDpq0A4KAGJ04lTPHeWsBkaaQs19bTFlJLmjR9lDx1udXuXr0iQfS2jOhLAZ1BhEjDcF2WQKcQuy/n4l5aw=="}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 47ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-10-20 16:53:51 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.erb (6.4ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (31.1ms)
+Completed 200 OK in 107ms (Views: 103.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-20 16:53:53 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2xNTPMXeBDzEZp3GduK0fk77iSavpF0RcRDGXrpKx/eSNRQxCqqvHyYNzalRM3NMTaZFGQduOon32zpakOjKtw==", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2xNTPMXeBDzEZp3GduK0fk77iSavpF0RcRDGXrpKx/eSNRQxCqqvHyYNzalRM3NMTaZFGQduOon32zpakOjKtw==", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (12.5ms)
+Completed 200 OK in 61ms (Views: 57.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-20 16:57:21 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fnCbh50+ugla2p++2w/mH6xr5SSLwP04Oq72fa4qwsY3VtyKUkoRKrixz9H83iEtrzYpGyMKmqC8ZQp5hIjPhg==", "user"=>{"email"=>"aaa@aaa", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fnCbh50+ugla2p++2w/mH6xr5SSLwP04Oq72fa4qwsY3VtyKUkoRKrixz9H83iEtrzYpGyMKmqC8ZQp5hIjPhg==", "user"=>{"email"=>"aaa@aaa", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (12.9ms)
+Completed 200 OK in 833ms (Views: 831.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-20 16:59:21 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"m+X8UaN+boRuo/pMjAQMAfi6iCvm20xgk3ifBy4mfQXSw7tcbArFp4zIqiOr1csz++dEFE4RK/gVs2MDBIRwRQ==", "user"=>{"email"=>"aaa@aaa", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"m+X8UaN+boRuo/pMjAQMAfi6iCvm20xgk3ifBy4mfQXSw7tcbArFp4zIqiOr1csz++dEFE4RK/gVs2MDBIRwRQ==", "user"=>{"email"=>"aaa@aaa", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (8.5ms)
+Completed 200 OK in 721ms (Views: 719.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-10-20 16:59:40 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.erb (2.6ms)
+  Rendered devise/registrations/new.html.haml within layouts/application (11.7ms)
+Completed 200 OK in 60ms (Views: 57.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-10-20 16:59:44 +0900
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mwWn1/QVgc7u/A9bS4MlLj1MUlFVBlU052pAdMhfjKTSI+DaO2Eq7QyXXzRsUuIcPhGebv3MMqxhobxw4v2B5A==", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  Rendering devise/registrations/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/registrations/new.html.haml within layouts/application (14.2ms)
+Completed 200 OK in 56ms (Views: 41.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-10-20 16:59:52 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (12.5ms)
+Completed 200 OK in 50ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-20 17:00:04 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5vPqRJP7P/q4mjpq+7TPjzYfncQCjuoY5vDVZFx7/Puv1a1JXI+U2VrxagXcZQi9NUJR+6pEjYBgOylgdtnxuw==", "user"=>{"email"=>"aaa@aaa", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'aaa@aaa' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[33mUPDATE `users` SET `current_sign_in_at` = '2016-10-20 08:00:04', `last_sign_in_at` = '2016-10-20 07:52:45', `sign_in_count` = 13, `updated_at` = '2016-10-20 08:00:04' WHERE `users`.`id` = 3[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 187ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 17:00:04 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 35ms (Views: 32.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 17:00:57 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (6.5ms)
+Completed 200 OK in 43ms (Views: 40.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 17:01:08 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (10.8ms)
+Completed 200 OK in 53ms (Views: 44.1ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-10-20 17:01:10 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"GFMOOLeKiPtL8GN2FRNp+WX7QyEqFBRhcNUB4nsqVt5QlNvYPz97fNHwEdmedTNfGSrOxqBacs//jIoX7WLUWA=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 6ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-10-20 17:01:10 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (10.6ms)
+Completed 200 OK in 45ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-20 17:01:16 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wIpsjSw8T1oqjZkjiPjodjXxVd0CqvNQUnC1y2YdIH7BX7mYaWZVs0b+YkRA2tPPEuW/itXrcC7bcICa72czDw==", "user"=>{"email"=>"aaa@aaa", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'aaa@aaa' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 163ms (ActiveRecord: 0.5ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wIpsjSw8T1oqjZkjiPjodjXxVd0CqvNQUnC1y2YdIH7BX7mYaWZVs0b+YkRA2tPPEuW/itXrcC7bcICa72czDw==", "user"=>{"email"=>"aaa@aaa", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (7.2ms)
+Completed 200 OK in 206ms (Views: 45.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-20 17:01:22 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"926XBffulGeL6W+/Rqddihkc8DEK2F7hoZHz0SRltUX2u0IQsrSOjuealNiOhWYzPggaZt2Z3Z8okcaArR+mNA==", "user"=>{"email"=>"aaa@aaa", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'aaa@aaa' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE `users` SET `current_sign_in_at` = '2016-10-20 08:01:22', `last_sign_in_at` = '2016-10-20 08:00:04', `sign_in_count` = 14, `updated_at` = '2016-10-20 08:01:22' WHERE `users`.`id` = 3[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 171ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 17:01:22 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (9.1ms)
+Completed 200 OK in 44ms (Views: 41.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 17:03:27 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (9.8ms)
+Completed 200 OK in 53ms (Views: 50.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 17:03:31 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (11.4ms)
+Completed 200 OK in 45ms (Views: 40.3ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-10-20 17:03:35 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rizBW4LodTw/ZyTgqxmryhrOJMenza50x+pcuE43ZoS42CIV4XuASNrSpj58CCTawho1ka1r5DD8JrICIntKjQ=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 8ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-10-20 17:03:35 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 49ms (Views: 47.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-20 17:03:39 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hlMQ6SRzQa7DPRda2RnbZbPY5oEu9RbLtmeYfkwSwfWPo4+aFxtT26CcU1o97RmJhTD10Gz2/FDAVMjmAjxpgA==", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hlMQ6SRzQa7DPRda2RnbZbPY5oEu9RbLtmeYfkwSwfWPo4+aFxtT26CcU1o97RmJhTD10Gz2/FDAVMjmAjxpgA==", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (6.6ms)
+Completed 200 OK in 43ms (Views: 42.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-10-20 17:03:45 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/registrations/new.html.haml within layouts/application (14.3ms)
+Completed 200 OK in 46ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-10-20 17:03:47 +0900
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BjZVi9yebPZ6cmWDOnIiG6lFjTJxQMuHRSYm2cIroJQPxsr47/Z+gxnTIYPehuD3n62eYzNDIRwzFXZBjAUI4Q==", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  Rendering devise/registrations/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/registrations/new.html.haml within layouts/application (11.5ms)
+Completed 200 OK in 55ms (Views: 40.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2016-10-20 17:04:02 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered collection of /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [21 times] (8.2ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (24.6ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (160.4ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from const_missing at /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/http/mime_type.rb:52)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from const_missing at /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/http/mime_type.rb:52)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (90.9ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendering /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/HisamuraTaiki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (204.2ms)
+Started GET "/users/sign_in" for ::1 at 2016-10-20 17:04:10 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (17.0ms)
+Completed 200 OK in 81ms (Views: 77.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-10-20 17:08:20 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bxnhVpjHxHHKhf8NcdiZruUMS1+qLpQ9X6ZyQJIPT55m6X4lq6/WBKkkuw2VLFtC0+RYDugtfqYplSLY3CHn6w==", "user"=>{"email"=>"aaa@aaa", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'aaa@aaa' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE `users` SET `current_sign_in_at` = '2016-10-20 08:08:20', `last_sign_in_at` = '2016-10-20 08:01:22', `sign_in_count` = 15, `updated_at` = '2016-10-20 08:08:20' WHERE `users`.`id` = 3[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 195ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 17:08:20 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (8.1ms)
+Completed 200 OK in 52ms (Views: 49.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 17:08:32 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 35ms (Views: 32.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 17:08:38 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (8.2ms)
+Completed 200 OK in 50ms (Views: 43.3ms | ActiveRecord: 1.5ms)
+
+
+Started PATCH "/users/3" for ::1 at 2016-10-20 17:08:44 +0900
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HVUtD1tcDqyjz1CgiU0UoavU/JnSepNM354JD2ickFiBMRtpMAZiy53ERxl4f/uQS94cGCSCjoBF7FgHy9u2nA==", "user"=>{"name"=>"asaa", "email"=>"aaa@aaa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update", "id"=>"3"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE `users` SET `name` = 'asaa', `updated_at` = '2016-10-20 08:08:44' WHERE `users`.`id` = 3[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 173ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 17:08:44 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/messages" for ::1 at 2016-10-20 17:08:52 +0900
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q0O8R07WD5Q+nrpIdWaRbZsCIkLOyFfdWiHoZcjW9aDfJ4ohJYxj8wCVrfGEVH5cewjCwzgwShHAU7lta5HTZA==", "message"=>{"body"=>"aaa"}, "commit"=>"input"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.6ms)[0m  [1m[32mINSERT INTO `messages` (`created_at`, `updated_at`, `body`) VALUES ('2016-10-20 08:08:52', '2016-10-20 08:08:52', 'aaa')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/messages?acction=index
+Completed 302 Found in 10ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/messages?acction=index" for ::1 at 2016-10-20 17:08:52 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"acction"=>"index"}
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (8.2ms)
+Completed 200 OK in 37ms (Views: 34.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/messages?acction=index" for ::1 at 2016-10-20 17:10:23 +0900
+Processing by MessagesController#index as HTML
+  Parameters: {"acction"=>"index"}
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (32.6ms)
+Completed 200 OK in 81ms (Views: 68.3ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/messages" for ::1 at 2016-10-20 17:10:25 +0900
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J6l7C8ydi7fX16YLAEjRTnq358YCG3tgNqfTF5Nj3mG7zU1tp8fn0OncsbLxej5/mr0HR/TjZqys1YIfMCT4pQ==", "message"=>{"body"=>""}, "commit"=>"input"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (10.1ms)
+Completed 200 OK in 53ms (Views: 45.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 17:10:29 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 49ms (Views: 45.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 17:10:44 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (9.9ms)
+Completed 200 OK in 57ms (Views: 51.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 17:10:47 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (10.1ms)
+Completed 200 OK in 46ms (Views: 41.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2016-10-20 17:10:48 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/edit.html.haml within layouts/application (18.0ms)
+Completed 200 OK in 103ms (Views: 95.2ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/users/3" for ::1 at 2016-10-20 17:10:58 +0900
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xlOVez0+nhxa+V0NV7ulVG4OI3GQ9uFYgweIFPF53kxaN6MdVmTye2TySrSmiUpljgTD8GYO/JQZddkcUj74iA==", "user"=>{"name"=>"asaadddd", "email"=>"aaa@aaa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update", "id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[33mUPDATE `users` SET `name` = 'asaadddd', `updated_at` = '2016-10-20 08:10:59' WHERE `users`.`id` = 3[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 172ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 17:10:59 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 39ms (Views: 36.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/messages" for ::1 at 2016-10-20 17:11:01 +0900
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y4kqcRxil1agb9z1Kh+qp1baAZOeAoGQUwqDtR54peP/7RwXdzj7MZ5ky0zbLUWWttDhEmj6nFzJeNK9vT+DJw==", "message"=>{"body"=>""}, "commit"=>"input"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered messages/index.html.haml within layouts/application (8.6ms)
+Completed 200 OK in 46ms (Views: 37.6ms | ActiveRecord: 1.6ms)
+
+
