@@ -5,7 +5,7 @@
       .chat__side--edits
         =link_to edit_user_path(current_user) do
           =fa_icon "cog"
-        %a{href: ""}
+        =link_to new_group_path do
           =fa_icon "edit"
 
     %ul.chat__groups
