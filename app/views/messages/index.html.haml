@@ -1,7 +1,8 @@
 .chat
   .chat__side
     .chat__user
-      %p たなか たいち
+      %p 
+        = current_user.name
       .chat__side--edits
         =link_to edit_user_path(current_user) do
           =fa_icon "cog"
@@ -19,9 +20,11 @@
         sample
 
       .main__header--member
-        Members: たなかたいち
-      %a.main__header--edit
-        edit
+        Members: 
+        たなかたいち
+        .main__header--edit
+          =link_to edit_group_path(@group) do
+            edit
 
     .main__body
       .main__body.clearfix
