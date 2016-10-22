@@ -5,7 +5,8 @@ class MessagesController < ApplicationController
 
   def index
     @message = Message.new
-    # redirect_to :action => "index"
+    @group = Group.find(12)
+    #仮に12を置いている。
   end
   def create
     @message = Message.create(create_params)
