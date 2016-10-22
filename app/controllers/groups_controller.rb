@@ -4,8 +4,11 @@ class GroupsController < ApplicationController
   end
 
   def create
-    Group.create(create_params)
-    redirect_to controller: 'messages',action: 'index'
+    @group = Group.create(create_params)
+    if @group.save
+      redirect_to controller: 'messages',action: 'index'
+    else
+    end
   end
 
   def edit
@@ -14,8 +17,11 @@ class GroupsController < ApplicationController
   end
   def update
     @group = Group.find(params[:id])
-    @group.update(create_params)
-    redirect_to root_path
+    if @group.save
+      @group.update(create_params)
+      redirect_to root_path
+    else
+    end
     
   end
   private
