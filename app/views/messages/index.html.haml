@@ -11,29 +11,35 @@
 
     %ul.chat__groups
       %li.chat__group
-        %p.chat__group--name sample
-        %p.chat__group--message good
+        - @groups.each do |group|
+          %p.chat__group--name 
+            =link_to group_messages_path(group) do
+              =group.name
+          %p.chat__group--message 
+            samle
 
   .main
     .main__header
       .main__header--group
-        sample
+        = @group.name
 
       .main__header--member
+        -# - @group.users.each do |user|
         Members: 
-        たなかたいち
+        = @group.users.name
         .main__header--edit
           =link_to edit_group_path(@group) do
             edit
 
     .main__body
-      .main__body.clearfix
-        .main__body--name
-          たなかたいち
-        .main__body--time
-          2016/10/11 12:23:34
-      .main__body--group
-        sample
+      - @group.messages.each do |message|
+        .main__body.clearfix
+          .main__body--name
+            = message.user.name
+          .main__body--time
+            = message.created_at
+        .main__body--group
+          = message.body
 
     .main__footer
       - if flash[:error].present?
@@ -41,14 +47,8 @@
         
       - if flash[:success].present?
         = flash[:success]
-      -# %form.main__footer--message
-      -# .main__footer--text
-      -#   %textarea
-      -#   %label.main__footer--file
-      -#     %i.fa.fa-image
-      -# %input{:type =>"submit",:name =>"commit",:value =>"Send",:data_disable_with =>"Send"}
-
-      = form_for @message do |f|
+ 
+      = form_for [@group,@message] do |f|
         .main__footer--text
           = f.text_area :body
           %label.main__footer--file
