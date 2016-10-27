@@ -14,13 +14,13 @@ class MessagesController < ApplicationController
     respond_to do |format|
       if @message.save
         flash[:success] = "OK!"
-        redirect_to controller: 'messages',action: 'index'and return
+        redirect_to group_messages_path(@message.group_id)and return
 
         msg = {name: @message.user.name, date: @message.created_at, body: @message.body}
         render :json => msg
       else
         flash[:error] = "空欄のため"
-        redirect_to controller: 'messages',action: 'index'and return
+        redirect_to group_messages_path(@message.group_id)and return
       end
     end
   end
