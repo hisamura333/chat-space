@@ -16,7 +16,7 @@
             =link_to group_messages_path(group) do
               =group.name
           %p.chat__group--message 
-            samle
+            = group.messages
 
   .main
     .main__header
@@ -31,7 +31,7 @@
           =link_to edit_group_path(@group) do
             edit
 
-    .main__body
+    #ajax.main__body
       - @group.messages.each do |message|
         .main__body.clearfix
           .main__body--name
@@ -47,13 +47,13 @@
         
       - if flash[:success].present?
         = flash[:success]
- 
-      = form_for [@group,@message] do |f|
+
+      = form_for [@group,@message],id: "message-form" do |f|
         .main__footer--text
-          = f.text_area :body
+          = f.text_area :body,id:"message-body"
           %label.main__footer--file
             %i.fa.fa-image
-        = f.submit :input
+        = f.submit :input, id:"submit"
 
 
 
