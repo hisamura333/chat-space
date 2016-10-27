@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :groups, only: [:new,:create,:edit,:update] do
     resources :messages
   end
+  resources :entries, defaults: { format: 'json' }
   
 
 

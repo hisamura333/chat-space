@@ -11,21 +11,23 @@ class MessagesController < ApplicationController
 
   def create
     @message = Message.create(create_params)
+    respond_to do |format|
       if @message.save
-        @message.update(user_id: current_user.id, group_id: params[:group_id])
         flash[:success] = "OK!"
-        # redirect_to acction: 'show',group_id: params[:group_id]
-        redirect_to :back
+        redirect_to group_messages_path(@message.group_id)and return
+
+        msg = {name: @message.user.name, date: @message.created_at, body: @message.body}
+        render :json => msg
       else
         flash[:error] = "空欄のため"
-        redirect_to :back
+        redirect_to group_messages_path(@message.group_id)and return
       end
-
+    end
   end
 
   private
   def create_params
-    params.require(:message).permit(:body)
+    params.require(:message).permit(:body).merge(user_id: current_user.id, group_id: params[:group_id])
 
   end
 
