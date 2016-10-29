@@ -18,7 +18,6 @@ class GroupsController < ApplicationController
     if @group.save
       @group.update(create_params)
       redirect_to "/groups/#{@group.id}/messages"
-    else
     end
   end
 
