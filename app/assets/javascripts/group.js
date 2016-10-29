@@ -25,9 +25,10 @@ $(function(){
   }
   $('#user-search-field').on("keyup", function(){
     var input = $(this).val();
+    console.log (this)
     if(input !== preWord) {
       $.ajax({
-        url: 'http://localhost:3000/groups.json',
+        url: '/users.json',
         type: 'GET',
         datatype:'json',
         data: {

@@ -22,15 +22,6 @@ class GroupsController < ApplicationController
     end
   end
 
-  def index
-    @searched_user = User.where('name LIKE ?', "%#{params[:name]}%")
-    if @searched_user.present?
-      render json: @searched_user
-    else
-    end
-  end
-
-
   private
   def create_params
     params.require(:group).permit(:name,{:user_ids => []})
