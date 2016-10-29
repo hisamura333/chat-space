@@ -15,12 +15,6 @@
           =f.text_field :name , class: "chat-group-form__input", id: "user-search-field", placeholder: "追加したいユーザー名を入力してください"
           .chat-group-form__search.clearfix
           #user-search-result
-            -@users.each do |user|
-              .chat-group-user.clearfix
-                %p.chat-group-user__name
-                  = user.name
-                %a.user-search-add.chat-group-user__btn.chat-group-user__btn--add{user_id: user.id,user_name: user.name}追加
-
 
       .chat-group-form__field.clearfix
         .chat-group-form__field--left
@@ -28,10 +22,8 @@
         .chat-group-form__field--right
           #chat-group-users
             #group-user.chat-group-user.clearfix
-              -@users.each do |user|
-                -# =f.hidden_field :group[user_ids][],user
-                %p.chat-group-user__name
-                  = current_user.name
+              %p.chat-group-user__name
+                = current_user.name
 
 
         .chat-group-form__field.clearfix
