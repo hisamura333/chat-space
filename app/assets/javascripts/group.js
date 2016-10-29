@@ -25,7 +25,6 @@ $(function(){
   }
   $('#user-search-field').on("keyup", function(){
     var input = $(this).val();
-    console.log (this)
     if(input !== preWord) {
       $.ajax({
         url: '/users.json',
@@ -40,8 +39,6 @@ $(function(){
           appendList(user);
         })
       })
-      .fail(function(){
-      });
     }
   preWord = input;
   });
