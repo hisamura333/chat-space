@@ -1,4 +1,9 @@
 class GroupsController < ApplicationController
+  def index
+    @groups = Group.all
+    @message = Message.new
+    
+  end
   def new
     @group = Group.new
   end
