@@ -5,7 +5,7 @@ class GroupsController < ApplicationController
 
   def create
     @group = Group.create(create_params)
-    redirect_to "/groups/#{@group.id}/messages"
+    redirect_to group_messages_path(@group.id)
 
   end
 
@@ -16,7 +16,7 @@ class GroupsController < ApplicationController
     @group = Group.find(params[:id])
     if @group.save
       @group.update(create_params)
-      redirect_to "/groups/#{@group.id}/messages"
+      redirect_to group_messages_path(@group.id)
     end
   end
 
