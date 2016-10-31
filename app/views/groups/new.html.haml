@@ -12,17 +12,19 @@
         .chat-group-form__field--left
           = f.label :name,"チャットメンバーを追加", class: "chat-group-form__label"
         .chat-group-form__field--right
+          %input#user-search-field.chat-group-form__input{:placeholder => "追加したいユーザー名を入力してください", :type => "text"}
           .chat-group-form__search.clearfix
-          =f.text_field :name, class: "chat-group-form__input", id: "user-search-field", placeholder: "追加したいユーザー名を入力してください"
           #user-search-result
 
       .chat-group-form__field.clearfix
         .chat-group-form__field--left
-          = f.label :name,"チャットメンバー", class: "chat-group-form__label"
+          = f.label :member,"チャットメンバー", class: "chat-group-form__label"
         .chat-group-form__field--right
           #chat-group-users
-            #chat-group-user-192.chat-group-user.clearfix
-              =f.collection_check_boxes(:user_ids,User.all, :id, :name) 
+            #group-user.chat-group-user.clearfix
+              =f.hidden_field :user_ids, :multiple => true, value: current_user.id
+              %p.chat-group-user__name
+                = current_user.name
 
         .chat-group-form__field.clearfix
           .chat-group-form__field--left
