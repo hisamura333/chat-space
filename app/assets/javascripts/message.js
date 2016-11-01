@@ -1,3 +1,12 @@
+//jsonで飛んできたメッセージのhtmlを生成して追加
+function addHtml(data) {
+  var html ="<div class= 'main__body clearfix'><div class='main__body--name'>"+data.name+"</div><div class='main__body--time'>"+data.date+"</div></div><div class='main__body--group'>"+data.body+"<img src="+data.image+"/></div>";
+
+  $('#ajax').append(html);
+};
+
+
+
 $(document).on('turbolinks:load', function(){
 $(function(){
   $("#submit").click(function(e){
@@ -12,9 +21,12 @@ $(function(){
       data: formData,
       processData: false,
       contentType: false
-    }).done(function(data){
-    $('#ajax').append("<div class= 'main__body clearfix'><div class='main__body--name'>"+data.name+"</div><div class='main__body--time'>"+data.date+"</div></div><div class='main__body--group'>"+data.body+"<img src="+data.image+"/></div>");
     })
+    .done(function(data){
+      addHtml(data);
+    })
+    .fail(function(){
+    });
   });
 });
 });
