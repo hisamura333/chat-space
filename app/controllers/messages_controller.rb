@@ -16,7 +16,7 @@ class MessagesController < ApplicationController
         flash[:success] = "OK!"
         redirect_to group_messages_path(@message.group_id)and return
 
-        msg = {name: @message.user.name, date: @message.created_at, body: @message.body}
+        msg = {name: @message.user.name, date: @message.created_at, body: @message.body,image: @message.image}
         render :json => msg
       else
         flash[:error] = "空欄のため"
@@ -27,7 +27,7 @@ class MessagesController < ApplicationController
 
   private
   def create_params
-    params.require(:message).permit(:body).merge(user_id: current_user.id, group_id: params[:group_id])
+    params.require(:message).permit(:body,:image).merge(user_id: current_user.id, group_id: params[:group_id])
 
   end
 
