@@ -24,7 +24,6 @@
         = @group.name
 
       .main__header--member
-        -# - @group.users.each do |user|
         Members: 
         = @group.users.name
         .main__header--edit
@@ -40,19 +39,20 @@
             = message.created_at
         .main__body--group
           = message.body
-
+          = image_tag(message.image)
     .main__footer
       - if flash[:error].present?
         = flash[:error]
-        
+
       - if flash[:success].present?
         = flash[:success]
 
-      = form_for [@group,@message],id: "message-form" do |f|
+      = form_for [@group,@message],html:{class: "message-form clearfix",id: "message-form"} do |f|
         .main__footer--text
           = f.text_area :body,id:"message-body"
           %label.main__footer--file
             %i.fa.fa-image
+            =f.file_field :image, class: "message-input__image", id: "message-image"
         = f.submit :input, id:"submit"
 
 
