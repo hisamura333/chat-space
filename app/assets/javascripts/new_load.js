@@ -24,7 +24,6 @@ $(function(){
     })
     .done(function(data){
       $(".main__body").empty();
-      console.log('bbbbb')
       message_update(data);
     })
     .fail(function(){
