@@ -7,6 +7,16 @@ class MessagesController < ApplicationController
     @groups = Group.all
     @message = Message.new
     @group = Group.find(params[:group_id])
+    @messages = @group.messages
+    respond_to do |format|
+      
+      format.html{}
+      format.json{ render json:{
+        name: current_user.name,
+        messages: @messages
+        }
+      }
+    end
   end
 
   def create
@@ -30,5 +40,4 @@ class MessagesController < ApplicationController
     params.require(:message).permit(:body,:image).merge(user_id: current_user.id, group_id: params[:group_id])
 
   end
-
 end
