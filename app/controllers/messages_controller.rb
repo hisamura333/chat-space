@@ -7,9 +7,11 @@ class MessagesController < ApplicationController
     @groups = Group.all
     @message = Message.new
     @group = Group.find(params[:group_id])
+    @users = @group.users
     @messages = @group.messages
+
     respond_to do |format|
-      
+
       format.html{}
       format.json{ render json:{
         name: current_user.name,
