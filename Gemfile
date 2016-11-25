@@ -61,6 +61,9 @@ end
 
 gem 'devise'
 gem 'carrierwave','>= 1.0.0.beta','<2.0'
+gem 'dotenv'
+gem 'config'
+gem 'fog'
 
 
 
