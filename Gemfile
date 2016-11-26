@@ -60,7 +60,11 @@ group :test do
 end
 
 gem 'devise'
-gem 'carrierwave','>= 1.0.0.beta','<2.0'
+gem 'carrierwave'
+gem 'dotenv'
+gem 'config'
+gem 'fog'
+gem 'dotenv-rails'
 
 
 
