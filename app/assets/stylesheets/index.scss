@@ -86,7 +86,7 @@ body {
           font-size: 11px;
           margin-left: 20px;
         }
-        
+
       }
     }
   }
@@ -129,6 +129,8 @@ body {
     height: calc(100% - 270px);
     overflow-y: scroll;
     background-color: #fafafa;
+    &--box {
+      padding: 10px;
       &--name{
       float: left;
       font-size: 16px;
@@ -143,8 +145,9 @@ body {
       &--group{
         font-size: 14px;
         color: #434A54;
-        margin-left: 50px;
+        margin-left: 70px;
       }
+    }
   }
 
   &__footer {
