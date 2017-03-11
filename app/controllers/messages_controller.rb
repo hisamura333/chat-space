@@ -31,11 +31,12 @@ class MessagesController < ApplicationController
         msg = {name: @message.user.name, date: @message.created_at, body: @message.body,image: @message.image}
         render :json => msg
       else
-        flash[:error] = "空欄のため"
+        flash[:error] = "空欄のため送信できませんでした"
         redirect_to group_messages_path(@message.group_id)and return
       end
     end
   end
+
 
   private
   def create_params
