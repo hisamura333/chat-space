@@ -1,7 +1,7 @@
 .chat
   .chat__side
     .chat__user
-      %p 
+      %p
         = current_user.name
       .chat__side--edits
         =link_to edit_user_path(current_user) do
@@ -12,10 +12,10 @@
     %ul.chat__groups
       %li.chat__group
         - @groups.each do |group|
-          %p.chat__group--name 
+          %p.chat__group--name
             =link_to group_messages_path(group) do
               =group.name
-          %p.chat__group--message 
+          %p.chat__group--message
             =group.messages.last.body
 
   .main
@@ -24,7 +24,7 @@
         = @group.name
 
       .main__header--member
-        Members: 
+        Members:
         - @users.each do |user|
           = user.name
         .main__header--edit
@@ -33,12 +33,12 @@
 
     #ajax.main__body
       - @group.messages.each do |message|
-        .main__body.clearfix
-          .main__body--name
+        .main__body--box.clearfix
+          .main__body--box--name
             = message.user.name
-          .main__body--time
+          .main__body--box--time
             = message.created_at
-        .main__body--group
+        .main__body--box--group
           = message.body
           = image_tag(message.image)
     .main__footer
@@ -55,8 +55,3 @@
             %i.fa.fa-image
             =f.file_field :image, class: "message-input__image", id: "message-image"
         = f.submit :input, id:"submit"
-
-
-
-
-
