@@ -7,7 +7,7 @@ function addHtml(data) {
 
 
 
-$(document).on('turbolinks:load', function(){
+// $(document).on('turbolinks:load', function(){
 $(function(){
   $("#submit").click(function(e){
     var form = $("#message-form").get()[0];
@@ -29,4 +29,4 @@ $(function(){
     });
   });
 });
-});
+// });
