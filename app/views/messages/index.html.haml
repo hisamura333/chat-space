@@ -1,39 +1,60 @@
-= render :partial => "groups/chatgroup"
+.chat
+  .chat__side
+    .chat__user
+      %p
+        = current_user.name
+      .chat__side--edits
+        =link_to edit_user_path(current_user) do
+          =fa_icon "cog"
+        =link_to new_group_path do
+          =fa_icon "edit"
 
-.main
-  .main__header
-    .main__header--group
-      = @group.name
+    %ul.chat__groups
+      %li.chat__group
+        - @groups.each do |group|
+          %p.chat__group--name
+            =link_to group_messages_path(group) do
+              =group.name
+          %p.chat__group--message
+            - if group.messages.present?
+              =group.messages.last.body
+            - else
+              "no message"
 
-    .main__header--member
-      Members:
-      - @users.each do |user|
-        = user.name
-      .main__header--edit
-        =link_to edit_group_path(@group) do
-          edit
+  .main
+    .main__header
+      .main__header--group
+        = @group.name
 
-  #ajax.main__body
-    - @group.messages.each do |message|
-      .main__body--box.clearfix
-        .main__body--box--name
-          = message.user.name
-        .main__body--box--time
-          = message.created_at
-      .main__body--box--group
-        = message.body
-        = image_tag(message.image)
-  .main__footer
-    - if flash[:error].present?
-      = flash[:error]
+      .main__header--member
+        Members:
+        - @users.each do |user|
+          = user.name
+        .main__header--edit
+          =link_to edit_group_path(@group) do
+            edit
 
-    - if flash[:success].present?
-      = flash[:success]
+    #ajax.main__body
+      - @group.messages.each do |message|
+        .main__body--box.clearfix
+          .main__body--box--name
+            = message.user.name
+          .main__body--box--time
+            = message.created_at
+        .main__body--box--group
+          = message.body
+          = image_tag(message.image)
+    .main__footer
+      - if flash[:error].present?
+        = flash[:error]
 
-    = form_for [@group,@message],html:{class: "message-form clearfix",id: "message-form"},remote: true do |f|
-      .main__footer--text
-        = f.text_area :body,id:"message-body"
-        %label.main__footer--file
-          %i.fa.fa-image
-          =f.file_field :image, class: "message-input__image", id: "message-image"
-      = f.submit :input, id:"submit"
+      - if flash[:success].present?
+        = flash[:success]
+
+      = form_for [@group,@message],html:{class: "message-form clearfix",id: "message-form"},remote: true do |f|
+        .main__footer--text
+          = f.text_area :body,id:"message-body"
+          %label.main__footer--file
+            %i.fa.fa-image
+            =f.file_field :image, class: "message-input__image", id: "message-image"
+        = f.submit :input, id:"submit"
