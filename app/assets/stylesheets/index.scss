@@ -30,6 +30,11 @@ body {
   background-color: #d65f4c;
 }
 
+a:-webkit-any-link  {
+  color: wheat;
+  font-weight: bold;
+}
+
 .chat {
   min-width: 980px;
   height: 100%;
