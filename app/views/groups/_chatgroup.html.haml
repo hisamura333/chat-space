@@ -1,0 +1,22 @@
+.chat
+  .chat__side
+    .chat__user
+      %p
+        = current_user.name
+      .chat__side--edits
+        =link_to edit_user_path(current_user) do
+          =fa_icon "cog"
+        =link_to new_group_path do
+          =fa_icon "edit"
+
+    %ul.chat__groups
+      %li.chat__group
+        - @groups.each do |group|
+          %p.chat__group--name
+            =link_to group_messages_path(group) do
+              =group.name
+          %p.chat__group--message
+            - if group.messages.present?
+              =group.messages.last.body
+            - else
+              "no message"

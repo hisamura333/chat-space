@@ -20,7 +20,7 @@ $(function(){
   var preWord;
 
   function appendList(user) {
-    var item = $("<div class= 'chat-group-user clearfix'>").append("<p class='chat-group-user__name'>"+user.name+"</p><a class='user-search-add chat-group-user__btn chat-group-user__btn--add', user_name='"+user.name+"', user_id='"+user.id+"'>追加</a>");
+    var item = $('<div class= "chat-group-user clearfix">').append("<p class='chat-group-user__name'>"+user.name+"</p><a class='user-search-add chat-group-user__btn chat-group-user__btn--add', user_name='"+user.name+"', user_id='"+user.id+"'>追加</a>");
     list.append(item);
   }
   $('#user-search-field').on("keyup", function(){
@@ -35,6 +35,7 @@ $(function(){
         }
       })
       .done(function(data) {
+        $("#user-search-result").empty();
         $.each(data, function(i, user){
           appendList(user);
         })
@@ -44,5 +45,3 @@ $(function(){
   });
 
 });
-
-
